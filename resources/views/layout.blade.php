@@ -10,6 +10,9 @@
             <a href="/login">Login</a>
         </li>
         <li>
+            <a href="/createUser">Create User</a>
+        </li>
+        <li>
             <a href="/about">About us</a>
         </li>
         <li>

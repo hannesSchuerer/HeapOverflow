@@ -106,12 +106,6 @@
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="151" />
-    <option name="y" value="-22" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
-  </component>
   <component name="ProjectId" id="1SnLQlgJ2yvIxutaGh7FhVXmAZr" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -144,7 +138,7 @@
       <workItem from="1571597474542" duration="316000" />
       <workItem from="1571636198187" duration="738000" />
       <workItem from="1571643173318" duration="5991000" />
-      <workItem from="1572194405188" duration="2803000" />
+      <workItem from="1572194405188" duration="4099000" />
     </task>
     <servers />
   </component>
