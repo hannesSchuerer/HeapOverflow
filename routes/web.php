@@ -23,11 +23,9 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::post('/login', 'authController@store');
-
+Route::post('/login', 'userController@login');
+Route::post('/createUser', 'userController@store');
+Route::get('/login', 'userController@login');
+Route::get('/createUser', 'userController@store');
 
 
