@@ -30,4 +30,4 @@ Route::get('/login', function () {
 Route::post('/login', 'authController@store');
 
 
-//Hallo Hannes
+
