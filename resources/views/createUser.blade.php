@@ -13,7 +13,7 @@
         Username <input type="text" name="username"></br>
         Email <input type="text" name="email"></br>
         Password <input type="password" name="password"></br>
-        Confirm Password  <input type="password" name="passwordConfirm"></br>
+        Confirm Password  <input type="password" name="password_confirmation"></br>
         <input type="submit" value="Create">
     </form>
 @endsection
