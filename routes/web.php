@@ -24,8 +24,8 @@ Route::get('/about', function () {
 });
 
 Route::post('/login', 'userController@login');
-Route::post('/createUser', 'userController@store');
+Route::post('/create', 'userController@store');
 Route::get('/login', 'userController@login');
-Route::get('/createUser', 'userController@store');
+Route::get('/createUser', 'userController@index');
 
 
