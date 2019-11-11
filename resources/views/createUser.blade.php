@@ -16,6 +16,17 @@
         Confirm Password  <input type="password" name="password_confirmation"></br>
         <input type="submit" value="Create">
     </form>
+
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
 @endsection
 </body>
 </html>

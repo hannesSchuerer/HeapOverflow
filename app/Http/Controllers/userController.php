@@ -20,7 +20,7 @@ class userController extends Controller
         ]);
 
         if($validator->fails()){
-
+            return redirect('/createUser')->withErrors($validator);
         }
 
         $user = new User;
