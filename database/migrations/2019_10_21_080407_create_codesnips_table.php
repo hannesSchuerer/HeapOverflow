@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCodesnipTable extends Migration
+class CreateCodesnipsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCodesnipTable extends Migration
      */
     public function up()
     {
-        Schema::create('codesnip', function (Blueprint $table) {
+        Schema::create('codesnips', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('userId');
             $table->longText('codeSnip');
@@ -29,6 +29,6 @@ class CreateCodesnipTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('codesnip');
+        Schema::dropIfExists('codesnips');
     }
 }

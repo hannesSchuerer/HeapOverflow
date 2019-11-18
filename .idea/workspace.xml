@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91335162-a9f0-4d90-b179-6eae4e38ff67" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,28 +56,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/userController.php" />
-        <option value="$PROJECT_DIR$/resources/views/createUser.blade.php" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -169,76 +146,7 @@
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
-  </component>
   <component name="ProjectId" id="1SnLQlgJ2yvIxutaGh7FhVXmAZr" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="HeapOverflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HeapOverflow" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="HeapOverflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HeapOverflow" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="HeapOverflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HeapOverflow" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="HeapOverflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HeapOverflow" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="HeapOverflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HeapOverflow" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="HeapOverflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HeapOverflow" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="HeapOverflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HeapOverflow" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="HeapOverflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HeapOverflow" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="HeapOverflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HeapOverflow" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -270,6 +178,7 @@
       <workItem from="1571597474542" duration="316000" />
       <workItem from="1571636198187" duration="738000" />
       <workItem from="1571643173318" duration="5991000" />
+<<<<<<< HEAD
       <workItem from="1572194405188" duration="4099000" />
       <workItem from="1572255902607" duration="2239000" />
       <workItem from="1573461479584" duration="3594000" />
@@ -304,6 +213,14 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
+=======
+      <workItem from="1572194405188" duration="4224000" />
+      <workItem from="1573993917352" duration="2437000" />
+      <workItem from="1574008158504" duration="7403000" />
+    </task>
+    <servers />
+  </component>
+>>>>>>> a4f309fbe38a8ad7faf6395262c71d1b5ff7d9db
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -313,18 +230,14 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -430,4 +343,6 @@
       </provider>
     </entry>
   </component>
+=======
+>>>>>>> a4f309fbe38a8ad7faf6395262c71d1b5ff7d9db
 </project>
