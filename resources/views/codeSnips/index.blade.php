@@ -1,4 +1,6 @@
-@extends('layout')
+@extends('layouts.layout')
+
+@section('title', 'Your CodeSnips')
 
 @section('content')
 
