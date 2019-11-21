@@ -15,9 +15,9 @@ class CreateCodesnipsTable extends Migration
     {
         Schema::create('codesnips', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('userId');
+            $table->bigInteger('userId')->default(1);
             $table->longText('codeSnip');
-            $table->integer('upVote');
+            $table->integer('upVote')->default(1);
             $table->timestamps();
         });
     }

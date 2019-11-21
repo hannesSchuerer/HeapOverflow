@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\codesnip;
+use App\CodeSnip;
 
 class codeSnipController extends Controller
 {
     public function index()
     {
-        $codeSnips = codesnip::all();
+        $codeSnips = CodeSnip::all();
         return view('codeSnips.index', compact('codeSnips'));
     }
 
-    public function show()
+    public function show(CodeSnip $codeSnip)
     {
-
+        return view('codeSnips.show', compact('codeSnip'));
     }
 
     public function create()
@@ -24,36 +24,26 @@ class codeSnipController extends Controller
 
     public function store()
     {
-        $codeSnip = new codesnip();
+       CodeSnip::create(request(['codeSnip']));
 
-        $codeSnip->codeSnip = request('codeSnip');
-
-        $codeSnip->save();
-
-        return redirect('codeSnips');
+       return redirect('/codeSnips');
     }
 
-    public function edit($id)
+    public function edit(CodeSnip $codeSnip)
     {
-        $codeSnips = codesnip::find($id);
-        return view('codeSnips.edit', compact('codeSnips'));
+        return view('codeSnips.edit', compact('codeSnip'));
     }
 
-    public function update($id)
+    public function update(CodeSnip $codeSnip)
     {
-        $codeSnips = codesnip::find($id);
-
-        $codeSnips->codeSnip = request('codeSnip');
-
-        $codeSnips->save();
+       $codeSnip->update(request(['codeSnip']));
 
         return redirect('/codeSnips');
     }
 
-    public function destroy($id)
+    public function destroy(CodeSnip $codeSnip)
     {
-        $codeSnips = codesnip::destroy($id);
-
+        $codeSnip->delete();
         return redirect('/codeSnips');
     }
 }

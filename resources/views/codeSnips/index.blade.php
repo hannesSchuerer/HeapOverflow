@@ -6,12 +6,14 @@
 
     <h1 class="title">CodeSnips</h1>
 
-    @foreach ($codeSnips as $codeSnip)
-        <a href="/codeSnips/{{$codeSnip->id}}/edit">
-             <li>
-                 <textarea class="textarea" type="textarea" cols="40" rows="20">{{$codeSnip->codeSnip}}</textarea>
-             </li>
-        </a>
-    @endforeach
+    <ul>
+        @foreach ($codeSnips as $codeSnip)
+            <a href="/codeSnips/{{$codeSnip->id}}">Show</a>
+            <a href="/codeSnips/{{$codeSnip->id}}/edit">Edit</a>
+            <li>
+                <textarea readonly class="textarea" type="textarea" cols="40" rows="20">{{$codeSnip->codeSnip}}</textarea>
+            </li>
+        @endforeach
+    </ul>
 
 @endsection
