@@ -10,12 +10,24 @@
         {{csrf_field()}}
 
         <div>
-            <textarea class="textarea" cols="40" rows="20" type="textarea" name="codeSnip" placeholder="Add your CodeSnip"></textarea>
+            <textarea class="textarea {{ $errors->has('codeSnip') ? 'is-danger' : ''}}" cols="40" rows="20" type="textarea" name="codeSnip" placeholder="Add your CodeSnip">{{ old('codeSnip') }}</textarea>
         </div>
         <div>
             <div class="control">
                 <button type="submit" class="button is-link">Create CodeSnip</button>
             </div>
         </div>
+
+        @if ($errors->any())
+            <div class="notification is-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{$error}}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
+    </form>
 
 @endsection

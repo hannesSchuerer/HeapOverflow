@@ -24,7 +24,11 @@ class codeSnipController extends Controller
 
     public function store()
     {
-       CodeSnip::create(request(['codeSnip']));
+        $attributes = request()->validate([
+           'codeSnip' => ['required', 'min:10']
+        ]);
+
+       CodeSnip::create($attributes);
 
        return redirect('/codeSnips');
     }
