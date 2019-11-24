@@ -10,4 +10,10 @@ class CodeSnip extends Model
     protected $fillable = [
         'codeSnip'
     ];
+
+    public function tags()
+    {
+        return $this->belongsToMany('App\Tag', 'codesniphastag', 'codeSnipId', 'tagId');
+    }
+
 }
