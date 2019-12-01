@@ -9,5 +9,15 @@
 </head>
 <body>
     <h1>HeapOverflow</h1>
+
+    <div class="list">
+        <li>
+            <a href="/codeSnips">CodeSnips</a>
+        </li>
+        <li>
+            <a href="/tags">Tags</a>
+        </li>
+    </div>
+
 </body>
 </html>

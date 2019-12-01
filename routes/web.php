@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 
 Route::resource('codeSnips', 'codeSnipController');
+Route::resource('tags', 'tagController');

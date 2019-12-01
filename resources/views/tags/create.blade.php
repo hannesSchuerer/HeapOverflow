@@ -1,20 +1,20 @@
-@extends('layouts.layoutCodeSnips')
+@extends('layouts.layoutTags')
 
-@section('title', 'Create CodeSnip')
+@section('title', 'Create Tag')
 
 @section('content')
 
-    <h1 class="title">Create a new CodeSnip</h1>
+    <h1 class="title">Create a new Tag</h1>
 
-    <form method="POST" action="/codeSnips">
+    <form method="POST" action="/tags">
         {{csrf_field()}}
 
         <div>
-            <textarea class="textarea {{ $errors->has('codeSnip') ? 'is-danger' : ''}}" cols="40" rows="20" type="textarea" name="codeSnip" placeholder="Add your CodeSnip">{{ old('codeSnip') }}</textarea>
+            <input class="textarea {{ $errors->has('tag') ? 'is-danger' : ''}}" cols="40" rows="20" type="textarea" name="tag" value="{{ old('tag') }}" placeholder="Add your Tag">
         </div>
         <div>
             <div class="control">
-                <button type="submit" class="button is-link">Create CodeSnip</button>
+                <button type="submit" class="button is-link">Create Tag</button>
             </div>
         </div>
 

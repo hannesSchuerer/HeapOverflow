@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.layoutCodeSnips')
 
 @section('title', 'Your CodeSnips')
 

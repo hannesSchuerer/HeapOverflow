@@ -7,8 +7,9 @@
 <body>
 
     <div class="container">
+        <a href="/">Home</a>
         <a href="/codeSnips">My CodeSnips</a>
-        <a href="/codeSnips/create">Create</a>
+        <a href="/codeSnips/create">Create CodeSnip</a>
     </div>
 
     <div class="container">

@@ -1,38 +1,38 @@
-@extends('layouts.layoutCodeSnips')
+@extends('layouts.layoutTags')
 
-@section('title', 'Edit CodeSnip')
+@section('title', 'Edit Tag')
 
 @section('content')
 
-    <h1 class="title">Edit CodeSnip</h1>
+    <h1 class="title">Edit Tag</h1>
 
-    <form method="POST" action="/codeSnips/{{$codeSnip->id}}">
+    <form method="POST" action="/tags/{{$tag->id}}">
         @method('PATCH')
         @csrf
         <div class="field">
-            <label class="label" for="codeSnip">CodeSnip</label>
+            <label class="label" for="codeSnip">Tag</label>
 
             <div>
 
-                <textarea class="textarea {{ $errors->has('codeSnip') ? 'is-danger' : ''}}" type="textarea" cols="40" rows="20" name="codeSnip" placeholder="CodeSnip">{{$codeSnip->codeSnip}}</textarea>
+                <input class="text {{ $errors->has('tag') ? 'is-danger' : ''}}" type="text" name="tag" placeholder="Tag" value="{{$tag->tag}}">
 
             </div>
         </div>
 
         <div>
             <div class="control">
-                <button type="submit" class="button is-link">Update CodeSnip</button>
+                <button type="submit" class="button is-link">Update Tag</button>
             </div>
         </div>
 
     </form>
 
-    <form method="POST" action="/codeSnips/{{$codeSnip->id}}">
+    <form method="POST" action="/tags/{{$tag->id}}">
         @method('DELETE')
         @csrf
         <div>
             <div class="control">
-                <button type="submit" class="button">Delete CodeSnip</button>
+                <button type="submit" class="button">Delete Tag</button>
             </div>
         </div>
 

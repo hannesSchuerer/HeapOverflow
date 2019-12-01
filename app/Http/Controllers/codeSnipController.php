@@ -40,7 +40,6 @@ class codeSnipController extends Controller
 
     public function update(CodeSnip $codeSnip)
     {
-       //$codeSnip->update(request(['codeSnip']));
        $attributes = request()->validate([
            'codeSnip' => ['required', 'min:10']
        ]);
