@@ -6,10 +6,10 @@
 </head>
 <body>
 
-<div class="container">
-    <a href="/">Home</a>
-    <a href="/tags">My Tags</a>
-    <a href="/tags/create">Create Tag</a>
+<div class="navbar">
+    <a class="section" href="/">Home</a>
+    <a class="section" href="/tags">My Tags</a>
+    <a class="section" href="/tags/create">Create Tag</a>
 </div>
 
 <div class="container">

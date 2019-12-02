@@ -1,20 +1,16 @@
-<!doctype html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>HeapOverflow</h1>
+    <h1 class="title">HeapOverflow</h1>
 
-    <div class="list">
-        <li>
+    <div class="content">
+        <li class="list-item">
             <a href="/codeSnips">CodeSnips</a>
         </li>
-        <li>
+        <li class="list-item">
             <a href="/tags">Tags</a>
         </li>
     </div>

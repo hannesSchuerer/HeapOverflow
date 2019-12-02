@@ -6,10 +6,10 @@
 </head>
 <body>
 
-    <div class="container">
-        <a href="/">Home</a>
-        <a href="/codeSnips">My CodeSnips</a>
-        <a href="/codeSnips/create">Create CodeSnip</a>
+    <div class="navbar">
+        <a class="section" href="/">Home</a>
+        <a class="section" href="/codeSnips">My CodeSnips</a>
+        <a class="section" href="/codeSnips/create">Create CodeSnip</a>
     </div>
 
     <div class="container">
