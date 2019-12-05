@@ -18,3 +18,7 @@ Route::get('/', function () {
 
 Route::resource('codeSnips', 'codeSnipController');
 Route::resource('tags', 'tagController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
