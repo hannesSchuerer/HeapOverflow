@@ -1,23 +1,19 @@
 @extends('layouts.app')
-
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+    <title>HeapOverflow</title>
+</head>
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
+<body>
+    <div class="content">
+        <li class="list-item">
+            <a href="/codeSnips">CodeSnips</a>
+        </li>
+        <li class="list-item">
+            <a href="/tags">Tags</a>
+        </li>
     </div>
-</div>
+
+</body>
 @endsection
+</html>

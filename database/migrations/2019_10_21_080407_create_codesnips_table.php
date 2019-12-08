@@ -15,10 +15,12 @@ class CreateCodesnipsTable extends Migration
     {
         Schema::create('codesnips', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('userId')->default(1);
+            $table->unsignedInteger('userId');
             $table->longText('codeSnip');
             $table->integer('upVote')->default(1);
             $table->timestamps();
+
+            $table->foreign('userId')->references('id')->on('users');
         });
     }
 

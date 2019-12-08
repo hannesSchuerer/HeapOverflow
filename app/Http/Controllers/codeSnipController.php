@@ -6,9 +6,14 @@ use App\CodeSnip;
 
 class codeSnipController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index']);
+    }
+
     public function index()
     {
-        $codeSnips = CodeSnip::all();
+        $codeSnips = CodeSnip::where('userId', auth()->id())->get();
         return view('codeSnips.index', compact('codeSnips'));
     }
 
@@ -27,6 +32,8 @@ class codeSnipController extends Controller
         $attributes = request()->validate([
            'codeSnip' => ['required', 'min:10']
         ]);
+
+        $attributes['userId'] = auth()->id();
 
        CodeSnip::create($attributes);
 

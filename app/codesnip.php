@@ -8,7 +8,8 @@ class CodeSnip extends Model
 {
     protected $table = 'codesnips';
     protected $fillable = [
-        'codeSnip'
+        'codeSnip',
+        'userId'
     ];
 
     public function tags()
