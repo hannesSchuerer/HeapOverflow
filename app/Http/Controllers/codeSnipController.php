@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\CodeSnip;
+use App\CodeSnipHasTag;
+use App\Tag;
 
 class codeSnipController extends Controller
 {
@@ -24,14 +26,18 @@ class codeSnipController extends Controller
 
     public function create()
     {
-        return view('codeSnips.create');
+        $tags = Tag::all();
+        return view('codeSnips.create', compact('tags'));
     }
 
     public function store()
     {
         $attributes = request()->validate([
-           'codeSnip' => ['required', 'min:10']
+           'codeSnip' => ['required', 'min:10'],
+           'selectedTag' => ['required']
         ]);
+
+        dd($attributes['codeSnip']->id());
 
         $attributes['userId'] = auth()->id();
 
